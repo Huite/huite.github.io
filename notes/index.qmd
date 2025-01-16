@@ -1,0 +1,16 @@
+---
+id: notes
+title: Notes
+listing:
+  contents: 
+   - "/*.qmd"
+   - "/*/index.qmd"
+  feed: true
+---
+
+This is where I store and share some of my notes.
+
+If you find errors or inaccuracies, please [open an
+issue](https://github.com/Huite/huite.github.io/issues) or better yet: [open a
+pull request!](https://github.com/Huite/huite.github.io/pulls)
+

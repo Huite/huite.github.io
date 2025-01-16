@@ -1,0 +1,101 @@
+---
+title: Total Commander
+description: Customization notes
+---
+
+Total Commander is a two panel file manager for Windows. It is robust and
+configurable, but its default looks quite dated.
+
+## Layout
+
+Configuration -> Layout
+
+Hide all, except:
+
+- Show folder tabs
+- Show current directory
+- Show tabstop header
+
+## Display
+
+### File display
+
+Untick all, except:
+
+- Show hidden files
+- Use long names (recommended)
+
+### Font
+
+- File list font: JetBrains Mono, 11
+- Main window font: JetBrains Mono, 11
+- Dialog Box font: Microsoft Sans Serif, 8
+
+### Color
+
+- Dark mode: Always enabled
+- Font color: 192, 192, 192
+- Background: 43, 43, 43
+- Background 2: 43, 43, 43
+- Mark color: 237, 135, 150
+- Cursor color: 65, 65, 65
+- Cursor font: 192, 192, 192
+
+Tick: Use inverted cursor
+
+### Tabstops
+
+- Size display: dynamic (x.x k/M/G/T)
+- Header/footer: dynamic (x.x k/M/G/T)
+
+## Operation
+
+Mouse selection mode: Left mouse button (Windows standard)
+
+Edit/View: Set to `neovide.exe "1%"`
+
+## Misc.: Shortcuts
+
+The configuration file can be found at `%APPDATA/Ghisler/wincmd.ini`
+
+A few shortcuts:
+
+```{.ini}
+[Shortcuts]
+OEM_US;:=cm_FocusCmdLine
+# Navigate
+C+H=cm_FocusLeft
+C+K=cm_GotoPrev
+C+J=cm_GotoNext
+C+L=cm_FocusRight
+S+G=cm_GoToLast
+C+G=cm_GoToFirstEntry
+OEM_US/?=cm_ShowQuickSearch
+# Edit
+C+F=cm_Edit
+CS+F=cm_EditNewFile
+# Sort
+C+1=cm_SrcSortByCol1
+C+2=cm_SrcSortByCol2
+C+3=cm_SrcSortByCol3
+C+4=cm_SrcSortByCol4
+# Yank and put
+S+V=cm_ExchangeSelection
+C+Y=cm_CopyNamesToClip
+S+Y=cm_CopyFullNamesToClip
+C+P=cm_PasteFromClipboard
+S+P=cm_CopyOtherpanel
+C+R=cm_RenameOnly
+S+D=cm_Delete
+S+ENTER=cm_MkDir
+```
+
+## PDF preview
+
+- Get 64-bit SumatraPDF viewer.
+- Get the slister plugin: https://totalcmd.net/plugring/slister.html
+
+## Remarks
+
+- Press Cntrl + Q to preview (works with text files, PDFs, images)
+- To fit an image within, tab to it, press F.

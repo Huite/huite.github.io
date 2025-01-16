@@ -1,0 +1,19 @@
+---
+title: Starship
+description: Customizable shell prompt
+---
+
+Starship will show Git branches, virtual environments, etc.
+
+Run:
+
+```{.console}
+scoop install starship
+```
+
+Then run:
+
+```{.console}
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+```

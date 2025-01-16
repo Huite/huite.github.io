@@ -1,0 +1,8 @@
+---
+title: Nushell
+description: Cross platform structured shell
+---
+
+```{console}
+scoop install nu
+```

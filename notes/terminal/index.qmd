@@ -1,0 +1,8 @@
+---
+title: Terminal and Shell
+description: Platform consistent terminal and shell
+metadata-files: ["../_listing_meta.yml"]
+---
+
+WezTerm with NuShell results in a nice consistent terminal emulator with plenty
+of features.

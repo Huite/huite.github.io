@@ -1,0 +1,19 @@
+---
+title: Zoxide
+description: A nicer cd
+---
+
+Zoxide remembers which directories are visited most frequently and jumps to
+them.
+
+Run:
+
+```{.console}
+scoop install zoxide
+```
+
+In `config.nu`, add:
+
+```{.console}
+source ~/.zoxide.nu
+```

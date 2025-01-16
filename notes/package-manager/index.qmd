@@ -1,0 +1,30 @@
+---
+title: Package Manager
+description: Install without the agonizing pain
+---
+
+# Windows
+
+Life is much easier with a package manager. Fortunately, Windows has useable
+package managers now as well. [Scoop](https://scoop.sh/) works well.
+
+Open PowerShell and run:
+
+```{.console}
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+
+# macOS
+
+Open shell and run:
+
+```{.console}
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Add homebrew binary directory to path
+
+```{.nu}
+$env.PATH = ($env.PATH | append ["/opt/homebrew/bin"])
+```

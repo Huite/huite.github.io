@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Huite's website"
+  navbar:
+    title: false
+    pinned: true
+    collapse: false
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Notes
+        file: notes/index.qmd
+      - about.qmd
+  site-url: "https://github.huite.io/"
+
+execute:
+  enabled: false
+
+format:
+  html:
+    theme: [zephyr, style.scss]
+    toc: true
+
+sidebar:
+  - title: Notes
+    pinned: false
+    collapse-level: 1
+    style: docked
+    contents: notes/
