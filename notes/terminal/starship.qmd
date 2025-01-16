@@ -14,6 +14,7 @@ scoop install starship
 Then run:
 
 ```{.console}
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu
+mkdir ($nu.default-config-dir | path join 'starship')
+starship init nu | save -f ($nu.default-config-dir | path join 'starship/init.nu')
+source ($nu.default-config-dir | path join 'starship/init.nu')
 ```
