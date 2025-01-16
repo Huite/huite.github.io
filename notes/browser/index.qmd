@@ -1,0 +1,30 @@
+---
+title: Edge Browser
+description: Changing defaults
+---
+
+It's a perfectly adequate Chromium browser.
+
+I've mostly followed this blogpost before: https://thomask.sdf.org/blog/2023/03/18/the-dark-defaults-of-microsoft-edge.html
+
+# Language
+
+Click the cog and set language to English (United States).
+
+# Extensions
+
+- Bitwarden
+- uBlock Origin
+- Surfingkeys (seems to work better than Vimium for me)
+
+# Settings
+
+- Profiles / Microsoft Rewards: turn off
+- Privacy, Search, and Services: turn off all services
+- Address bar and search / Search suggestions and filters: turn off "Show me search and site suggestions using my typed characters" and "Show me suggestions from history, favourites and other data on this device using my typed characters
+"
+- Languages: turn off "Text prediction", turn off "Enable grammar and spellcheck assistance"
+
+# Vertical tabs
+
+Click the "Tab actions menu" and "Turn on vertical tabs".
