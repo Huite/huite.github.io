@@ -4,6 +4,8 @@ description: Cross platform terminal emulator
 ---
 
 ```{.console}
+scoop install git
+scoop bucket add extras
 scoop install wezterm
 ```
 
