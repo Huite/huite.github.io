@@ -1,0 +1,19 @@
+---
+title: Visual Studio Code
+description: VSCode setup
+---
+
+Run:
+
+```{console}
+scoop install vscode
+```
+
+# Extensions
+
+- Python
+- Julia
+- Modern Fortran
+- GitLens
+- Catppuccin for VSCode
+- Catppuccin Icons for VSCode
