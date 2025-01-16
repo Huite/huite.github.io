@@ -15,5 +15,9 @@ scoop install zoxide
 In `config.nu`, add:
 
 ```{.console}
-source ~/.zoxide.nu
+# Initialize zoxide
+zoxide init nushell | save -f ($nu.default-config-dir | path join 'zoxide.nu')
+
+# Source the zoxide config
+source ($nu.default-config-dir | path join 'zoxide.nu')
 ```
