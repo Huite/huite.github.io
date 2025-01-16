@@ -8,11 +8,16 @@ description: Install without the agonizing pain
 Life is much easier with a package manager. Fortunately, Windows has useable
 package managers now as well. [Scoop](https://scoop.sh/) works well.
 
+See the [Install instructions](https://github.com/ScoopInstaller/Install) for
+installing to a custom location, which is desirable for Windows 11 dev. I've mapped
+the dev drive to `Z:\`.
+
 Open PowerShell and run:
 
 ```{.console}
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+irm get.scoop.sh -outfile 'install.ps1'
+.\install.ps1 -ScoopDir 'Z:\scoop' -ScoopGlobalDir 'Z:\scoop\global' -NoProxy
 ```
 
 # macOS
