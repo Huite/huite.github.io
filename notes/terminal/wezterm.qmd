@@ -11,7 +11,11 @@ scoop install wezterm
 
 Running NuShell inside of WezTerm unfortunately [inserts a
 newline](https://github.com/nushell/nushell/issues/5585) with each typed
-character. In `config.nu`, set `osc133: false` as such:
+character.
+
+Start by setting nvim as the editor: `$env.config.buffer_editor = "nvim"`
+
+In `config.nu`, set `osc133: false` as such by calling `config nu`:
 
 ```{.nu}
   shell_integration: {
@@ -44,7 +48,7 @@ character. In `config.nu`, set `osc133: false` as such:
   }
 ```
 
-Use NuShell by default:
+Use NuShell by default, run `nvim %HOME%/.wezterm.lua`:
 
 ```{.lua}
 local wezterm = require 'wezterm'
