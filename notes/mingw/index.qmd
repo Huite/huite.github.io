@@ -1,0 +1,21 @@
+---
+title: MINGW
+description: GNU compilers on Windows
+---
+
+The latest installer from SourceForge doesn't seem to work.
+
+Use the latest release from https://winlibs.com instead.
+
+Pick the latest version from UCRT runtime with POSIX threads for 64-bit.
+
+At the time of writing: 
+
+UCRT runtime
+GCC 14.2.0 (with POSIX threads) + LLVM/Clang/LLD/LLDB 19.1.1 + MinGW-w64 12.0.0 UCRT - release 2   (LATEST)
+
+Notes: 
+
+- UCRT (Universal C Runtime): This is newer and recommended for Windows 10/11
+- MSVCRT (Microsoft Visual C++ Runtime): The older runtime, maintained for compatibility
+- POSIX threads are more standard than MCF threads
